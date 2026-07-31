@@ -1,0 +1,19 @@
+Review Agentbox 0.2 as a production-focused one-person CLI.
+
+Run:
+
+python -m unittest discover -s tests -v
+python -m compileall -q agentbox tests
+
+Inspect every source file.
+
+Required review:
+
+1. Compare OCI command arguments against current Oracle official CLI documentation.
+2. Verify shell quoting in upload, download, detached Codex, cancellation, logs, and diff commands.
+3. Add regression tests for any defect found.
+4. Keep the strict VM.Standard.A1.Flex, 2 OCPU, 12 GB RAM, and 200 GB storage barrier.
+5. Never use real Oracle credentials or create a cloud resource.
+6. Never add a dashboard, hosted server, database, billing, users, GPUs, MCP server, or another cloud.
+7. Preserve timestamped non-overwriting downloads and secret exclusions.
+8. Produce a reviewable pull request with a concise risk list.

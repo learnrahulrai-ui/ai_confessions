@@ -224,7 +224,7 @@ class RemoteClient:
 
     def codex_login(self, record: InstanceRecord) -> None:
         self.runner.exec_interactive(
-            [*self._ssh_base(record, tty=True), "codex login --device-auth"]
+            [*self._ssh_base(record, tty=True), "codex login"]
         )
 
     def codex_remote_command(

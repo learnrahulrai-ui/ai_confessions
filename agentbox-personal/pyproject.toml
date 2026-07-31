@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentbox-personal"
+version = "0.2.0"
+description = "Personal Machine0-style CLI for one Oracle Cloud Always Free VM"
+requires-python = ">=3.11"
+readme = "README.txt"
+license = {text = "MIT"}
+authors = [{name = "Rahul Rai"}]
+dependencies = []
+
+[project.scripts]
+agentbox = "agentbox.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["agentbox*"]

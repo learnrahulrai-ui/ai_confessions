@@ -1,0 +1,27 @@
+SECURITY BOUNDARY
+
+Local-only credentials:
+
+~/.oci/config
+Oracle API private key
+~/.ssh/agentbox_ed25519
+Codex authentication stored on the Oracle VM
+
+Never commit these files.
+
+Agentbox uploads only the folder named by the user. rsync exclusions remove common secret files and generated directories. Review upload output with --dry-run before the first real transfer.
+
+Oracle write operations:
+
+create
+start
+stop
+delete
+
+These commands support --dry-run. Deletion also requires an exact typed confirmation unless --yes is supplied.
+
+Agentbox does not create a dashboard, database, load balancer, public HTTPS proxy, GPU, paid VM shape, additional Oracle user, or central credential store.
+
+The free-tier guard validates the Agentbox request, not the entire Oracle account. Review Oracle console billing, quotas, and existing resources independently.
+
+Report defects privately before using Agentbox with sensitive repositories.

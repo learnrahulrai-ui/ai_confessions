@@ -1,0 +1,11 @@
+0.2.0 - 2026-07-31
+
+Added one-person Oracle Always Free VM lifecycle commands.
+Added secure rsync upload and timestamped download.
+Added detached Codex execution through tmux.
+Added logs, result, diff, jobs, and cancellation commands.
+Added dry-run support for cloud writes and file transfers.
+Added strict A1 resource limits.
+Added Ubuntu image discovery.
+Added typed deletion confirmation.
+Added unit tests, compilation validation, CI, security boundary, and live acceptance sequence.

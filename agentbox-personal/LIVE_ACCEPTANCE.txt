@@ -1,0 +1,30 @@
+PERSONAL AGENTBOX LIVE ACCEPTANCE
+
+Run only from your own WSL or Ubuntu machine after Oracle login.
+
+1. python -m unittest discover -s tests -v
+2. agentbox doctor
+3. agentbox cost-check
+4. agentbox discover-image
+5. agentbox create devbox --dry-run
+6. agentbox create devbox
+7. agentbox upload devbox /path/to/a-small-git-project --dry-run
+8. agentbox upload devbox /path/to/a-small-git-project
+9. agentbox codex-login devbox
+10. agentbox codex devbox project-name TASK.txt --dry-run
+11. agentbox codex devbox project-name TASK.txt
+12. Disconnect SSH or close laptop.
+13. agentbox jobs devbox
+14. agentbox logs devbox project-name --lines 200
+15. agentbox result devbox project-name
+16. agentbox diff devbox project-name
+17. agentbox download devbox project-name ./agentbox-results --dry-run
+18. agentbox download devbox project-name ./agentbox-results
+19. Inspect downloaded Git diff and tests.
+20. agentbox stop devbox
+21. agentbox start devbox
+22. Confirm files remain.
+23. agentbox delete devbox --dry-run
+24. agentbox delete devbox
+
+Stop immediately when Oracle reports a paid shape, unexpected storage, a nonzero price estimate, missing capacity, or an account-policy warning.
